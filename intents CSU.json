@@ -1,0 +1,127 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi","hi there","good morning","How are you", "Is anyone there?", "Hello", "Good day"],
+         "responses": [
+                "Hello, thanks for visiting", 
+                "Good to see you again", 
+                "Hi there, how can I help?",
+                "Ha, Glad you showed up, how are you?",
+                "yeah my guy what do you want me to do for you?",
+                "welcome aboard, how may I help you"
+        ],
+         "context_set": ""
+        },
+
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Thanks", "Thanks for the info", "i will catch you later", "Thank you"],
+         "responses": [
+                "See you later, thanks for visiting", 
+                "Have a nice day", 
+                "Bye! Come back again soon.",
+                "Adios",
+                "Thank"
+        ]
+        },
+        
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful"],
+         "responses": [
+                "Happy to help!", 
+                "Any time!", 
+                "My pleasure"
+        ]
+        },
+
+        {"tag": "hours",
+         "patterns": ["What hours are you open?","when the office is open?", "What are your hours?", "When are you open?", "What are your office hours?","Service Hours", "Hours"],
+         "responses": [
+                "We're open from 8:30-17:30, Monday throught Friday", 
+                "Weekdays - 08:30 -17:30",
+                "Office time from 8:30 am till 5:30 pm",
+                "Our office hours are Monday through Friday from 8:30 AM to 5:30 PM. We are closed on weekends and holidays."
+
+        ]
+        },
+
+        {"tag": "location",
+         "patterns": ["What is your location?", "Where are you located?", "What is your address?", "Where is your university situated?","Where is the university located?", "Can I get the physical Adresse?", "Adress"],
+         "responses": [
+                "We are at Dr Fazıl Kuçuk Caddesi, Ozankoy.", 
+                "Adresse : 99320 Cyprus, Dr Fazıl Kuçuk Caddesi, Ozankoy, TRNC"
+        ]
+        },
+
+        {"tag": "payments",
+         "patterns": ["Do you take credit cards?", "Do you accept Mastercard?", "Are you cash only?", "how about the school fees payement", "i want to pay" ],
+         "responses": ["We accept VISA, Mastercard and AMEX", "We accept most major credit cards"]
+        },
+
+        {"tag": "admissions",
+         "patterns": ["What are your Admission Requirements?", "Admission Requirements?", "What do you request for Admission?", "Admission"],
+         "responses": [
+                "Transcripts (including the grading system of the institution),\n Undergraduate diploma (minimum Cumulative GPA of 2.25/4.00, or an official transcript to demonstrate an equivalent general performance),\n Two reference letters,\n Letter of Intent in English (A letter clearly stating the purpose for the application)."
+                ]
+        },
+        {"tag": "application",
+         "patterns": ["How to apply", "is there any possibility to apply online?", "can i apply?", "Application process"],
+         "responses": [" you can apply by using the following link: https://apply.csu.edu.tr"
+                
+                ]
+        },
+        {
+         "tag":"deadline",
+         "patterns": ["When is the application deadline?"],
+         "responses":[
+                "The application deadline varies depending on the program and term. Please check our website for the specific deadline."
+         ]
+        },
+
+        {"tag": "Transfer programs",
+        "patterns": ["Can I transfer credits from another institution?", "Do you accept a tranfer student from others university?", "What are the different faculty you have?", "Faculty" ],
+        "responses": [
+                "Yes, we accept transfer credits from accredited institutions. Transfer credit policies vary by program, so please consult our admissions office for more information."
+       ],
+        "context_set": "cademic_programs"
+       },
+
+        {"tag": "Bachelor programs",
+         "patterns": ["What undergraduate programs do you offer?", "Do you offer Undergraduate programs?", "What are the different faculty you have?", "Faculty" ],
+         "responses": [
+                "We offer undergraduate programs in fields such as Computer Science, Engineering, Business Administration, Bank and Finance, Psychology, Nursing and more"
+        ],
+         "context_set": "cademic_programs"
+        },
+
+        {"tag": "graduate programs",
+         "patterns": ["Do you offer graduate programs?", "Any Masters programs?", "Do you offer doctoral programs" ],
+         "responses": [
+                "Yes, we offer master's and doctoral programs designed to advance your career and deepen your expertise in your chosen field."
+        ],
+         "context_set": "cademic_programs"
+        },
+
+        {"tag": "financial aid",
+         "patterns": ["How do I apply for scholarships?", "What types of financial aid are available?","Do you offer scholarships for student?","scholarships"],
+         "responses": [
+                "Our university offers a wide range of scholarship opportunities to our students who choose Cyprus Science University and study at our university.\n Taking into account students' individual differences, personal characteristics, social and artistic skills, sports abilities and character structures along with the required exam results, \n various scholarship opportunities are offered to our students who are successful in sports, science, art and social volunteering based studies, \n in addition to ÖSYM and preference scholarships.\n Scholarships continue within the framework of our university's scholarship regulations",
+                "A 100% scholarship is given to students who are among the top 1000 students in any score type in the University Entrance Exams organized annually by the TR Higher Education Council Measurement,\n Selection and Placement Center and who are placed in one of the Cyprus Science University programs.\n In addition, 75% of the students who ranked among the top 1001 - 2000 in the same exam;\n Students who fall between 2001 and 3000 are 50%; Students who rank between 3001 and 4000 are supported with a 25% scholarship rate."
+        ],
+         "context_filter": "scholarship"
+        },
+
+        {
+         "tag":"contact informations",
+         "patterns":["Do you have a phone number","Is there an email-address I can reach out to?", "How can I contact the admissions office?"],
+         "responses": [
+                "Yes, you can reach us via email at info@csu.edu.tr. We strive to respond to all emails or by a Direct call :+90 392 650 00 00"
+        ]
+        },
+
+        {
+         "tag":"Kius student system",
+         "patterns":["","",""],
+         "responses":["","",""]
+        }
+
+   ]
+}
